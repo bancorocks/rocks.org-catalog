@@ -69,7 +69,7 @@ There are two ways to register this catalog:
    catalog:
      locations:
        - type: url
-         target: https://github.com/bancorocks/rocks.org-catalog/blob/main/catalog-info.yaml
+         target: https://github.com/bancorocks/rocks.org-catalog/blob/main/catalog/catalog-info.yaml
    ```
 
 ## Development Workflow
