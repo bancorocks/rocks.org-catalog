@@ -1,0 +1,43 @@
+{
+  "name": "rocks.org-catalog",
+  "version": "0.1.0",
+  "description": "Org catalog entities for Banco Rocks",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bancorocks/rocks.org-catalog.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  },
+  "scripts": {
+    "catalog:validate": "validate-entity \"catalog/**/*.yaml\"",
+    "yaml:lint": "eslint catalog/**/*.yaml",
+    "lint": "yarn yaml:lint && yarn catalog:validate",
+    "prepare": "husky",
+    "test": "yarn lint",
+    "ci": "yarn lint"
+  },
+  "devDependencies": {
+    "@roadiehq/backstage-entity-validator": "^0.5.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-yml": "^1.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "yaml-eslint-parser": "^0.5.0"
+  },
+  "lint-staged": {
+    "catalog/**/*.yaml": [
+      "eslint --fix",
+      "validate-entity"
+    ]
+  },
+  "keywords": [
+    "backstage",
+    "catalog",
+    "yaml",
+    "entities"
+  ]
+}

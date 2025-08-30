@@ -1,0 +1,57 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: banking-team
+  title: Banking Team
+  description: Team responsible for core banking.
+  annotations:
+    github.com/team-slug: bancorocks/banking-team
+  tags:
+    - team
+    - banking
+  links:
+    - url: https://bancorocks.com/teams/banking
+      title: Team Page
+spec:
+  type: team
+  parent: bancorocks
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: marketing-team
+  title: Marketing Team
+  description: Team responsible for marketing systems.
+  annotations:
+    github.com/team-slug: bancorocks/marketing-team
+  tags:
+    - team
+    - marketing
+  links:
+    - url: https://bancorocks.com/teams/marketing
+      title: Team Page
+spec:
+  type: team
+  parent: bancorocks
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform-team
+  title: Platform Team
+  description: Platform engineering team for Banco Rocks.
+  annotations:
+    github.com/team-slug: bancorocks/platform-team
+  tags:
+    - team
+    - platform
+  links:
+    - url: https://bancorocks.com/teams/platform
+      title: Team Page
+spec:
+  type: team
+  parent: bancorocks
+  children: []

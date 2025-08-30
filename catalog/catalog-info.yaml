@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: bancorocks-catalog
+  description: Backstage catalog for Banco Rocks
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-location: url:https://github.com/bancorocks/rocks.org-catalog
+  tags:
+    - catalog
+spec:
+  type: url
+  targets:
+    - ./org.yaml
+    - ./domains.yaml
+    - ./systems.yaml
+    - ./groups.yaml
+    - ./users.yaml

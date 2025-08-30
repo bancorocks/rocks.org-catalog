@@ -1,0 +1,36 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guiofsaints
+  title: Gui Santos
+  annotations:
+    github.com/user-login: guiofsaints
+  tags:
+    - user
+    - platform
+spec:
+  profile:
+    displayName: Gui Santos
+    email: guilherme.dos.santos.91@gmail.com
+    picture: https://github.com/guiofsaints.png
+  memberOf:
+    - platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: maria
+  title: Maria Oliveira
+  annotations:
+    github.com/user-login: maria
+  tags:
+    - user
+    - marketing
+spec:
+  profile:
+    displayName: Maria Oliveira
+    email: maria@bancorocks.com
+    picture: https://github.com/maria.png
+  memberOf:
+    - marketing-team

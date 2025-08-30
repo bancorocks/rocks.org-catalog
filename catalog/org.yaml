@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: bancorocks
+  title: Banco Rocks Org
+  description: Organization entity for Banco Rocks.
+  annotations:
+    github.com/org-name: bancorocks
+  tags:
+    - organization
+  links:
+    - url: https://banco.rocks
+      title: Website
+spec:
+  type: organization
+  profile:
+    displayName: Banco Rocks
+  children: []

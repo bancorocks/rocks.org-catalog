@@ -1,0 +1,27 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: accounts
+  title: Accounts System
+  description: Accounts management system.
+  tags:
+    - banking
+    - accounts
+spec:
+  owner: banking-team
+  domain: banking
+  lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: marketing
+  title: Marketing System
+  description: Marketing management system.
+  tags:
+    - marketing
+spec:
+  owner: marketing-team
+  domain: marketing
+  lifecycle: production

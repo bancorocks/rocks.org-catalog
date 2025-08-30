@@ -1,0 +1,34 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: banking
+  title: Banking
+  description: Domain for banking capabilities.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - domain
+    - banking
+  links:
+    - url: https://bancorocks.com/docs/domains/banking
+      title: Banking Domain Docs
+spec:
+  owner: bancorocks
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: marketing
+  title: Marketing
+  description: Domain for marketing capabilities.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - domain
+    - marketing
+  links:
+    - url: https://bancorocks.com/docs/domains/marketing
+      title: Marketing Domain Docs
+spec:
+  owner: bancorocks
